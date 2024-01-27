@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+section {
+    width: 100%;
+    background: black;
+}
+
+.main-nav {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    color: yellow;
+
+    .fname {
+        font-size: 120px;
+    }
+
+    .invert {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 34px;
+        color: black;
+        background: yellow;
+        border-radius: 8px;
+        margin: 20px 20px 20px 0;
+
+        .material-symbols-outlined {
+            font-size: 34px;
+            font-weight: 600;
+        }
+
+        box-shadow: 0 9px #999;
+    }
+
+    .invert span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .invert span:after {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .invert:hover span {
+        padding-right: 10px;
+    }
+
+    .invert:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+.image-cl{
+    color: #003135; background-color: yellow;
+    border-radius: 20px;
+}
+
+.typing{
+    background-color: black; 
+    color:yellow;
+    width: max-content;
+    -webkit-animation: typing 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: typing 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes typing {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes typing {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
