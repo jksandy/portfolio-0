@@ -1,52 +1,126 @@
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<section class="h-100 container-fluid ">
-  <div class="main-nav ">
-    <div>
-      <span class="fname d-flex justify-content-center ">Santhosh</span>
-    </div>
 
-    <div class = "d-flex justify-content-center " style="margin: 0 0 5px 0;">
-      Bagavath Singh
-    </div>
+<section class="sections">
+  <section class="section-div container-fluid">
+    <div class="main-nav ">
+      <div>
+        <span class="fname d-flex justify-content-center ">Santhosh</span>
+      </div>
 
-    <div class = "d-flex justify-content-center ">
-      <button *ngFor="let item of nav_items" class="invert py-4 " btn mat-raised-button>
-        {{item.button_content}}
-        <span class="material-symbols-outlined">
-          {{item.span_content}}
-        </span>
-      </button>
-    </div>
+      <div class="d-flex justify-content-center " style="margin: 0 0 5px 0;">
+        Bagavath Singh
+      </div>
 
-    <div class="container-fluid p-5 w-100  image-cl ">
-      <div class="row d-flex align-items-center ">
-        <div class="col-md-6 d-flex justify-content-center ">
-          <div>
-            <img height="500px" src="../assets/undraw_feeling_proud_qne1 (1).svg" />
+      <div class="d-flex justify-content-center p-3">
+        <button *ngFor="let item of nav_items" class="invert py-4 " btn mat-raised-button (click)="scrollOnClick(item)">
+          {{item.button_content}}
+          <span class="material-symbols-outlined">
+            {{item.span_content}}
+          </span>
+        </button>
+      </div>
+
+      <div class="d-flex justify-content-center ">
+        <div class="p-4 image-cl d-flex justify-content-center">
+          <div class="row d-flex align-items-center ">
+            <div class="col-md-6 d-flex justify-content-center ">
+              <div>
+                <img height="500px" src="../assets/undraw_feeling_proud_qne1 (1).svg" />
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="px-5 typing mb-3 ">
+                Web Developer
+              </div>
+
+              <div class="px-5 typing mb-3">
+                AI-ML Enthusiast
+              </div>
+
+              <div class="px-5 typing mb-3 ">
+                Wireless - LAN Developer
+              </div>
+
+            </div>
+
           </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="px-5 typing mb-3 ">
-            Web Developer
-          </div>
-
-          <div class="px-5 typing mb-3">
-            AI-ML Enthusiast
-          </div>
-
-          <div class="px-5 typing mb-3 ">
-            Wireless - LAN Developer
-          </div>
-
         </div>
 
       </div>
     </div>
+  </section>
+  <section class="pt-5 px-5 section-div container-fluid  " id="Education">
+    <div class="d-flex container justify-content-center edu-div">
+      Education
+    </div>
+    <div class="container-fluid pt-5 px-5">
+      <div class="row">
+        <div class="col-lg-4 ">
+          <div class="card">
+            <div class="card-header d-flex justify-content-center ">
+              <img src="../assets/emslogo.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Secondary Education</h5><br>
+              <p class="card-text">Kshatriya Vidhyasala English Medium School<br>
+                Central Board of Secondary Education<br>
+                <b>CGPA - 10</b>
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="https://kshatriyaems.com/" class="btn w-100  invert">Visit Institution</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  </div>
+        <div class="col-lg-4 ">
+          <div class="card">
+            <div class="card-header d-flex justify-content-center ">
+              <img src="../assets/rjmantra.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Higher Secondary Education</h5><br>
+              <p class="card-text">
+                RJ Mantra English School<br>
+                Indian School Certificate<br>
+                <b>87.20 Percentage</b>
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="http://www.rjmantra.com/" class="mb-4 btn w-100 invert">Visit Institution</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-lg-4 ">
+          <div class="card">
+            <div class="card-header d-flex justify-content-center ">
+              <img src="../assets/mepco.png" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Bachelors of Engineering<br></h5>
+              <p class="card-text">Computer Science and Engineering
+                <br>Mepco Schlenk Engineering College<br>
+                Affliated to Anna University<br>
+                <b>CGPA - 8.53</b>
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="https://www.mepcoeng.ac.in/" class="btn w-100 invert">Visit Institution</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-div container-fluid" id="Technical Skills">
+
+  </section>
+  <section class="section-div container-fluid" id="Acheivements">
+
+  </section>
 </section>
 
 <router-outlet></router-outlet>

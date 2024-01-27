@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +13,7 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class AppComponent {
   title = 'portfolio-0';
+  window:any;
   nav_items = [
     {
       button_content: "Education",
@@ -35,4 +36,9 @@ export class AppComponent {
       span_content: "wifi"
     }
   ]
+
+  scrollOnClick(item: any) {
+    var val = document.getElementById(item.button_content);
+    val?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
